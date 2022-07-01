@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #00ffe1, #016170);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+h1 {
+
+    background-image: url(img.jpg);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.container {
+    background-color: rgb(0, 0, 0, .40);
+    width: 40vw;
+    height: 50vh;
+    margin: 2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+select#flista{
+ min-width: 20vw;
+ min-height: 20vh;
+ margin-top: 2rem; 
+ text-align: center;
+ font-style: oblique;
+ background-color: rgb(0, 0, 0, .50);
+ color: white;
+ border: none;
+ border-radius: 8px;
+ overflow: hidden;
+ 
+}
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+ }
+ input:focus:-moz-placeholder { 
+    color: transparent;  
+ }
+ input:focus::-moz-placeholder {  
+    color: transparent;  
+ }
+ input:focus:-ms-input-placeholder {  
+    color: transparent;  
+ }
+
+    
+ 
+
+div.number{
+    
+}
+div.botao{
+    margin-top: 10px;  
+}
+input#fnum{
+padding: 0.3rem;
+    background-color: rgb(0, 0, 0, .50);
+    outline: none;
+    font: size 0.9rem;
+    color: white;
+    max-width: 50vw;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+}
+input[type="button"]{
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background-color: rgb(0, 0, 0, .50) ;
+    color: white;
+    border-radius: 50px;
+    font-size:0.9rem ;
+    font-weight:500;
+    cursor: pointer;
+    transition:all 0.8s ease ;
+    border: none;
+}
+input[type="button"]:hover{
+    background-color: white;
+    color: black;
+}    
+div#res{
+    margin-top: 0.2rem;
+    font-size: clamp(1.75em, 1rem, 1vw, 1.25em);
+   
+}
+
+
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    font-style: italic;
+}
+
+
+@media only screen and (min-width: 280px) and (max-width:1024px) {
+
+    body {
+        min-width: 50vw;
+        min-height: 100vh;
+        display: flex;
+    }
+
+    section.container {
+        min-width: 80vw;
+        min-height: 70vh;
+        margin: 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    select#flista{
+        margin-top: 1rem; 
+        font-size: clamp(1.75em, 1rem, 1vw, 1.25em);
+       
+    }
+
+
+    h1 {
+        display:block;
+        align-items: center;
+        justify-content: center;
+        font-size: 4rem;
+    }
+    div#res{
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        position:static;
+        font-size: max(12px , 2vw);
+        
+       
+       
+    }
+    input[type="button"]{
+        margin-top: 0.5rem;
+        padding: 0.4rem;
+        
+    }
+    header{
+        padding: 0;
+    }
+    
+
+    footer {
+        padding: 20px;
+
+    }
+}
